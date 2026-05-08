@@ -1,4 +1,4 @@
-# 🎭** Mad Libs Web App**
+# 🎭 Funny Mad Libs Game
 
 A fun and interactive Mad Libs game built using Python and Flask.  
 Users can enter random words through a web page, and the application generates funny customized stories instantly.
