@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mad Libs Game</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎭 Mad Libs Generator</h1>
+
+        <form method="POST">
+
+            <select name="choice">
+
+                <option value="1">Chaotic School Day</option>
+                <option value="2">Weird Vacation</option>
+                <option value="3">Horror Story</option>
+                <option value="4">Superhero Disaster</option>
+                <option value="5">Awkward First Date</option>
+
+            </select>
+            <br>
+            <input type="text" name="name" placeholder="Name"><br><br>
+            <input type="text" name="color" placeholder="Color"><br><br>
+            <input type="text" name="object" placeholder="Object"><br><br>
+            <input type="text" name="verb" placeholder="Verb ending in ing"><br><br>
+            <input type="text" name="animal" placeholder="Animal"><br><br>
+            <input type="text" name="food" placeholder="Food"><br><br>
+            <input type="text" name="song" placeholder="Song"><br><br>
+            <input type="text" name="place" placeholder="Place"><br><br>
+            <input type="text" name="vehicle" placeholder="Vehicle"><br><br>
+            <input type="text" name="adjective" placeholder="Adjective"><br><br>
+            <input type="text" name="plural_animal" placeholder="Plural Animal"><br><br>
+            <input type="text" name="room" placeholder="Room"><br><br>
+            <input type="text" name="plural_noun" placeholder="Plural Noun"><br><br>
+            <input type="text" name="city" placeholder="City"><br><br>
+            <input type="text" name="funny_name" placeholder="Funny Name"><br><br>
+            <input type="text" name="superhero_name" placeholder="Superhero Name"><br><br>
+            <input type="text" name="superpower" placeholder="Superpower"><br><br>
+            <input type="text" name="plural_animals" placeholder="Plural Animals"><br><br>
+            <input type="text" name="random_phrase" placeholder="Random Phrase"><br><br>
+            <input type="text" name="food_item" placeholder="Food Item"><br><br>
+
+            <button type="submit">Generate Story</button>
+
+        </form>
+
+        {% if story %}
+            <div class="story-box">
+                <h2>Your Story</h2>
+                <p>{{ story }}</p>
+            </div>
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
