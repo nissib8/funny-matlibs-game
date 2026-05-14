@@ -3,7 +3,7 @@
 A fun and interactive Mad Libs game built using Python and Flask.  
 Users can enter random words through a web page, and the application generates funny customized stories instantly.
 
-This project combines backend development with frontend design to create a simple full-stack beginner project.
+This project combines backend development with frontend design to create a simple full-stack beginner-level project.
 
 ---
 
